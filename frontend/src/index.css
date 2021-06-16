@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background:  #ddd;
+  
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

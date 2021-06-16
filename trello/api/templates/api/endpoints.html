@@ -1,0 +1,48 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'api/css/main.a0420336.chunk'%}">
+
+    <title>Trello-Endpoints</title>
+    <style>
+        h1{
+            margin: 10px auto;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            width: 400px;
+        }
+        .endpoints-list{
+            width : 30%;
+            margin: 50px auto;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        li{
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trello Endpoints</h1>
+    <ul class="endpoints-list">
+        <li>Users : api/users</li>
+        <li>New User : api/create_user?name=nick</li>
+        <li>Update User : api/update_user/id?name=nick_edited</li>
+        <li>New Task : api/create_task?id=1&task=watch+netflix</li>
+        <li>Delete User : api/delete?user_id=1</li>
+        <li>Delete Task : api/delete?task_id=1</li>
+    </ul>
+    <section id="root"></section>
+    <script src="{% static 'api/js/main.3188dc5e.chunk.js' %}"></script>
+    <script src="{% static 'api/js/2.5c8be33c.chunk.js' %}"></script>
+</body>
+
+</html>
